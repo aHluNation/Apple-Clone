@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --footer-background: #f5f5f7;
+    --footer-text-color: #6e6e73;
+    --footer-link-color: #424245;
+}
+
+body{
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400px;
+   
+}
+
+/* GLOBAL SELECTOR */
+a{
+    text-decoration: none;
+    opacity: 0.8;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.background{
+    background-color: #8e8686;
+    height: 500px;
+    padding-top: 47px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+}
+
+.background h2{
+    font-size: 56px;
+}
+
+.background h3{
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 6px;
+
+}
+
+.background .cta-links{
+    margin-top: 0.65em;
+}
+
+.background .cta-links a{
+    color: #2997ff;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.background .cta-links a:hover{
+    text-decoration: underline;
+}
+
+.background .cta-links a:nth-child(2){
+    margin-left: 35px;
+}
+
+/* xxxxx GLOBAL SELECTOR xxxxx*/
+
+
+/* HEADER */
+header{
+    background-color: rgba(22, 22, 23, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+header nav{
+    /* background-color:red; */
+    max-width: 1024px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+header nav a{
+    font-size: 10px;
+    padding: 0 21px;
+    font-weight: 300;
+    transition: 0.2s 0.2s ease;
+    color: white;
+}
+
+header nav a:hover{
+    opacity: 1;
+}
+
+/* MAIN */
+
+/* heroes */
+main{
+    padding-top: 50px;
+    background-color: white;
+}
+
+main .hereos .background:nth-child(2){
+    margin-top: 15px;
+}
+
+main .heroes .background:nth-child(3){
+    margin-top: 15px;
+}
+
+/* iphone-15-pro */
+main .heroes .iphone-15-pro{
+    background-image: url(./images/heroes/iphone15pro/iphone15pro_largetall.JPEG);
+}
+
+main .heroes .iphone-15-pro h2{
+    color: #f5f5f7;
+}
+
+main .heroes .iphone-15-pro h3{
+    color: #f5f5f7;
+}
+
+/* iphone-15 */
+main .heroes .iphone-15{
+    background-image: url(./images/heroes/iphone15/iphone15_largetall.JPEG);
+}
+
+main .heroes .iphone-15 h2{
+    color: #1d1d1f;
+}
+
+main .heroes .iphone-15 h3{
+    color: #1d1d1f;
+}
+
+/* watch */
+main .heroes .watch{
+    background-image: url(./images/heroes/applewatchseries/apple_watch_series_9_largetall.JPEG);
+}
+
+
+main .heroes .watch h3{
+    color: #f5f5f7;
+}
+
+
+
+/* promos */
+main .promos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin: 15px;
+}
+
+/* ipad */
+main .promos .ipad{
+    background-image: url(./images/promos/ipad/ipad_large.JPEG);
+}
+
+main .promos .ipad h4{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0em;
+
+    color: #1d1d1f;
+}
+
+main .promos .ipad h5{
+    font-size: 21px;
+    font-weight: 400;
+}
+
+main .promos .ipad .cta-links a{
+    color: #06c;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.23536;
+}
+
+
+/* vision-pro */
+main .promos .vision-pro{
+    background-image: url(./images/promos/apple-vision-pro/apple_vision_pro_large.JPEG);
+}
+
+main .promos .vision-pro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+main .promos .vision-pro a{
+    margin-top: 300px;
+    color: #1d1d1f;
+}
+
+main .promos .vision-pro h5{
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: .016em;
+    color: #1d1d1f;
+}
+
+main .promos .vision-pro p{
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    color: #6e6e73;
+    margin-top: 12px;
+}
+
+main .promos .vision-pro .cta-links a{
+    color: #06c;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.23536;
+}
+
+/* MacBook Air 15 */
+main .promos .macbook-air-15{
+    background-image: url(./images/promos/macbook-air-15/macbook_air_15_large.JPEG);
+}
+
+main .promos .macbook-air-15 h2{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: 1.1;
+    color: #1d1d1f;
+    
+}
+
+main .promos .macbook-air-15 h3{
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: .016em;
+    margin-top: 4px;
+    color: #1d1d1f;
+    line-height: 1.2381;
+}
+
+main .promos .macbook-air-15 .cta-links a{
+    font-size: 17px;
+    color: #06c;
+}
+
+/* airpod-pro */
+main .promos .airpod-pro{
+    background-image: url(./images/promos/airpods-pro/airpods_pro_large.JPEG);
+}
+
+main .promos .airpod-pro h2{
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    color: #f5f5f7;
+}
+
+main .promos .airpod-pro h3{
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    margin-top: 4px;
+    color: #f5f5f7;
+}
+
+
+main .promos .airpod-pro .cta-links a{
+    color: #2997ff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.23536;
+}
+
+/* trade-in */
+main .promos .trade-in{
+    background-image: url(./images/promos/iphone-tradein/iphone_tradein_large.JPEG);
+}
+
+main .promos .trade-in h3{
+    margin-top: 10px;
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    color: #1d1d1f;
+    text-align: center;
+}
+
+main .promos .trade-in .cta-links a{
+    color: #06c;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.23536;
+}
+
+
+/* card */
+main .promos .card{
+    background-image: url(./images/promos/apple-card/apple-card_large.JPEG);
+}
+
+main .promos .card h3{
+    margin-top: 9px;
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    color: #1d1d1f;
+    text-align: center;
+}
+
+
+main .promos .card .cta-links a{
+    color: #06c;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.23536;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    
+}
+
+footer a{
+    color: var(--footer-link-color);
+    text-decoration: underline;
+}
+footer .footer-wrapper{
+    height: auto;
+    width: 942px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+footer .footer-wrapper .sec-1{
+    padding: 17px 0 11px;
+    border-bottom: 1px solid;
+    font-size: 1em;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+}
+footer .footer-wrapper .sec-1 p{
+    padding-bottom: 0.8em;
+}
+footer .footer-wrapper .nav-row{
+    /* background-color: red; */
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+footer .footer-wrapper .nav-columns{
+    font-size: 12px;
+    margin-right: 20px;
+    margin-top: 16px;
+
+  
+}
+footer .footer-wrapper .nav-columns h3{
+    color: #1d1d1f;
+    font-size: 1em;
+  
+    margin-bottom: 10px;
+}
+footer .footer-wrapper .nav-columns a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0.8em;
+}
+footer .footer-wrapper .nav-columns a:hover{
+    text-decoration: underline;
+}
+
+footer .more-ways-to-shop{
+    font-size: 12px;
+    margin-bottom: 7px;
+    margin-top: 25px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d2d2d7;
+}
+footer .more-ways-to-shop a{
+    color: #06c;
+}
+
+footer .united-states{
+    font-size: 12px;
+    float: right;
+    margin-top: 5px;
+}
+footer .united-states a {
+    text-decoration: none;
+}
+footer .united-states a:hover{
+    text-decoration: underline;
+}
+
+footer .last-part{
+    font-size: 12px;
+}
+footer .last-part p{
+    margin-right: 30px;
+    float: left;
+    margin-top: 5px;
+}
+footer .last-part a{
+    margin-right: 20px;
+    float: left;
+    margin-top: 5px;
+    text-decoration: none;
+    border-right: 1px solid #86868b;
+    padding-right: 15px;
+}
+footer .last-part a:hover{
+    text-decoration: underline;
+}
